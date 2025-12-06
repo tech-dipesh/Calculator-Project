@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    body {
+      gap: 20px;
+  width: 500px;
+  /* height: 300px; */
+  margin-left: 25%;
+  border-radius: 5%;
+  background-color: black;
+  padding: 3rem;
+}
+#display {
+  display:block;
+  /* flex-wrap: wrap; */
+  margin-left: 190px;
+  margin-bottom: 40px;
+  height: 100px;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+  </style>
+      <div id="display">09407104710471024781024718274012470170247310237410740128</div>
+
+  <div id="display">9723942</div>
+  <button id="selectAC" class="grayColor Clear">Ac</button>
+  <script>
+    let acClear = document.getElementById("selectAC");
+    let displaySelect = document.getElementById("display");
+    acClear.addEventListener("click", function () {
+      let raw = displaySelect.innerText.trim();
+      let trimNumber = parseFloat(raw);
+      if (isNaN(trimNumber)) displaySelect.innerText = "";
+      else {
+        raw /= 10;
+        displaySelect.innerText = raw;
+      }
+    });
+
+
+    document.addEventListener("keydown", (event)=>{
+      if(event.key=='a'){
+          console.log("7 is clickd");
+      }
+      if(event.key=='q'){
+          console.log("7 is clickd");
+      }
+      if(event.key==='7'){
+          console.log("String 7 is clickd");
+      }
+    })
+  </script>
+</body>
+
+</html>
