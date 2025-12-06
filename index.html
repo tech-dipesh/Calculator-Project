@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator project:</title>
+  <link rel="stylesheet" href="index.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+  <style>
+   
+  </style>
+<body>
+  <div id="entireCalculator">
+    <div id="display">0</div>
+    <span class="firstRow">
+      <button id="selectAC" class="grayColor Clear">AC</button>
+      <button class="grayColor Miscallounous">+/-</button>
+      <button class="grayColor mod" onclick="mathOperation('%')">%</button>
+      <button class="rightSide divide" onclick="mathOperation('/')">/</button>
+    </span>
+    <span clas  s="secondRow">
+      <button class="lightGray seven" onclick="selectnumberElement(7);">7</button>
+      <button class="lightGray eight" onclick="selectnumberElement(8);">8</button>
+      <button class="lightGray nine" onclick="selectnumberElement(9);">9</button>
+      <button class="rightSide multiply" onclick="mathOperation('*')">*</button>
+    </span>
+    <span class="thirdRow">
+      <button class="lightGray four" onclick="selectnumberElement(4);">4</button>
+      <button class="lightGray five" onclick="selectnumberElement(5);">5</button>
+      <button class="lightGray six" onclick="selectnumberElement(6);">6</button>
+      <button class="rightSide subtraction" onclick="mathOperation('-')">-</button>
+    </span>
+    <span class="fourthRow">
+      <button class="lightGray one" onclick="selectnumberElement(1);">1</button>
+      <button class="lightGray two" onclick="selectnumberElement(2);">2</button>
+      <button class="lightGray three" onclick="selectnumberElement(3);">3</button>
+      <button id="addition" class="rightSide addition" onclick="mathOperation('+')">+</button>
+    </span>
+    <span class="fifthRow">
+      <button class="lightGray zero" onclick="selectnumberElement(0)">0</button>
+      <button class="lightGray dot" onclick="selectnumberElement('.')">.</button>
+      <button id="equal" class="rightSide">=</button>
+    </span>
+  </div>
+  <script src="index.js"></script>
+  <!-- <script type="module" src="keyword.js"></script> -->
+  <script>
+  </script>
+</body>
+
+</html>
